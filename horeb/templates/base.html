@@ -1,0 +1,550 @@
+{% load static %}
+
+<link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+<script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Horeb-springs</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{%static 'assets/img/horeb_logo.jpg'%}" rel="icon">
+  <link href="{%static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{%static 'assets/css/main.css'%}" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#hero" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{%static 'assets/img/horeb_logo.jpg'%}" alt="">
+        <!-- <h1 class="sitename">UpConstruction</h1> <span>.</span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 text-center">
+              <h2>HOREB SPRINGS GEO-CONSULTANTS</h2>
+              <p>Horeb Springs Geo-Consultants is a dynamic and innovative water resources, geotechnical and environmental consulting firm dedicated to providing exceptional services in the field of hydrogeology, geotechnical engineering and environmental geology. Established in 2021, we have swiftly risen to prominence as a trusted partner for a diverse clientele.</p>
+              <a href="#get-started" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item">
+          <img src="{%static 'assets/img/hero-carousel/hero-carousel-1.jpg'%}" alt="">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="{%static 'assets/img/hero-carousel/hero-carousel-2.jpg'%}" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="{%static 'assets/img/hero-carousel/hero-carousel-3.jpg'%}" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="{%static 'assets/img/hero-carousel/hero-carousel-4.jpg'%}" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="{%static 'assets/img/hero-carousel/hero-carousel-5.jpg'%}" alt="">
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About us Section -->
+    <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>WHO WE ARE AND WHY CHOOSE US</p>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Vision</h3>
+                    <p>Delivering cutting-edge geological solutions that contribute to the sustainable development in water resources and geotechnical works and the protection of the environment. </p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Mission</h3>
+                    <p>To delivering precise, data-driven insights to support responsible land use, water resource management, and infrastructure stability through innovative technology, rigorous scientific analysis, and a commitment to sustainability.</p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Expertise</h3>
+                    <p>Our team of seasoned geologists, engineers and hydro-geologists boasts of about a decade of experience in studying the intricate dynamics of the Earth's sub-surface. </p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Water Wisdome</h3>
+                    <p>We specialize in the responsible management of earth’s most precious resource- water. The key aspects include groundwater resources assessment, hydrogeological survey, geophysical survey, modelling of groundwater systems, Environmental Impact Assessment and reporting.</p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Solid Foundation</h3>
+                    <p>We are the bedrock upon which your projects can thrive. Our geotechnical insights ensure your structures stand the test of time, from skyscrapers to infrastructure projects of any scale.</p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Sustainability First</h3>
+                    <p>Sustainability is at the heart of everything we do. We are dedicated to finding innovative, environmentally friendly solutions that benefit both our clients and the planet.</p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Excellence In Every Detail</h3>
+                    <p>Our commitment to excellence means that we leave no stone unturned in delivering the highest quality consultancy services.</p>
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Collaborative Approach</h3>
+                    <p>We believe in close collaboration with our clients to tailor our expertise to their unique needs, ensuring success at every stage of their projects.</p>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- /About us Section -->
+
+    
+    <!-- Services Section -->
+     <!-- Alt Services Section -->
+    
+
+      <!-- Section Title -->
+      
+
+    <section id="services" class="services section light-background">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Services</h2>
+            <p>WHAT WE DO</p>
+        </div><!-- End Section Title -->
+
+        <section id="alt-services" class="alt-services section">
+
+            <div class="container">
+        
+                <div class="row justify-content-around gy-4">
+                  <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{%static 'assets/img/alt-services.jpg'%}" alt=""></div>
+        
+                  <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Ground Water Services</h3>
+                    <h5>Ground Water Exploration and Assessment</h5>
+        
+                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                      <i class="bi bi-easel flex-shrink-0"></i>
+                      <div>
+                        <h4><a href="" class="stretched-link">Aquifer Characterization</a></h4>
+                        <p>We evaluate the properties of aquifers, including porosity, permeability, and transmissivity, to assess their suitability for water supply or other purposes.</p>
+                      </div>
+                    </div><!-- End Icon Box -->
+        
+                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-patch-check flex-shrink-0"></i>
+                      <div>
+                        <h4><a href="" class="stretched-link">Hydrogeological survey</a></h4>
+                        <p>Our experts use the right technology for groundwater assessment. Resistivity (VES, HEP, ERT) and Electromagnetic (EM) methods are the main geophysical methods applied.</p>
+                      </div>
+                    </div><!-- End Icon Box -->
+        
+                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-brightness-high flex-shrink-0"></i>
+                      <div>
+                        <h4><a href="" class="stretched-link">Well Design and Installation</a></h4>
+                        <p>Our experts design and oversee the installation of wells, solar and structures for monitoring or extraction of groundwater.</p>
+                      </div>
+                    </div><!-- End Icon Box -->
+        
+                  </div>
+                </div>
+        
+              </div>
+        
+            </section><!-- /Alt Services Section -->
+
+            <section id="alt-services" class="alt-services section">
+
+                <div class="container">
+            
+                    <div class="row justify-content-around gy-4">
+                      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{%static 'assets/img/alt-services.jpg'%}" alt=""></div>
+            
+                      <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <!-- <h3>Ground Water Services</h3> -->
+                        <h5>Groundwater Quality Assessment</h5>
+            
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                          <i class="bi bi-easel flex-shrink-0"></i>
+                          <div>
+                            <h4><a href="" class="stretched-link">Water Sampling and Analysis</a></h4>
+                            <p>We collect water samples and conduct laboratory analysis to assess groundwater quality and compliance with regulatory standards.</p>
+                          </div>
+                        </div><!-- End Icon Box -->
+            
+                        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                          <i class="bi bi-patch-check flex-shrink-0"></i>
+                          <div>
+                            <h4><a href="" class="stretched-link">Contaminant Assessment</a></h4>
+                            <p>Our team identifies and assesses the presence of contaminants in groundwater and provides remediation strategies when necessary.</p>
+                          </div>
+                        </div><!-- End Icon Box -->
+            
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </section><!-- /Alt Services Section -->
+
+
+                <section id="alt-services" class="alt-services section">
+
+                    <div class="container">
+                
+                        <div class="row justify-content-around gy-4">
+                          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{%static 'assets/img/alt-services.jpg'%}" alt=""></div>
+                
+                          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                            <!-- <h3>Ground Water Services</h3> -->
+                            <h5>Aquifer Testing and Modeling</h5>
+                
+                            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                              <i class="bi bi-easel flex-shrink-0"></i>
+                              <div>
+                                <h4><a href="" class="stretched-link">Pumping Tests</a></h4>
+                                <p>To understand the aquifer properties.</p>
+                              </div>
+                            </div><!-- End Icon Box -->
+                
+                            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                              <i class="bi bi-patch-check flex-shrink-0"></i>
+                              <div>
+                                <h4><a href="" class="stretched-link">Groundwater Flow Modelling</a></h4>
+                                <p>Utilizing state-of-the-art software, we develop groundwater flow models to predict groundwater movement, availability and water balance.</p>
+                              </div>
+                            </div><!-- End Icon Box -->
+                
+                          </div>
+                        </div>
+                
+                      </div>
+                
+                    </section><!-- /Alt Services Section -->
+
+
+                    <section id="alt-services" class="alt-services section">
+
+                        <div class="container">
+                    
+                            <div class="row justify-content-around gy-4">
+                              <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{%static 'assets/img/alt-services.jpg'%}" alt=""></div>
+                    
+                              <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                                <!-- <h3>Ground Water Services</h3> -->
+                                <h5>Well-field Design and Management</h5>
+                    
+                                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                                  <i class="bi bi-easel flex-shrink-0"></i>
+                                  <div>
+                                    <h4><a href="" class="stretched-link">Well-field Design</a></h4>
+                                    <p>We design well-fields for optimal water extraction and distribution.</p>
+                                  </div>
+                                </div><!-- End Icon Box -->
+                    
+                                <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                                  <i class="bi bi-patch-check flex-shrink-0"></i>
+                                  <div>
+                                    <h4><a href="" class="stretched-link">Monitoring and Maintenance</a></h4>
+                                    <p>Our team offers ongoing well-field monitoring and maintenance services to ensure efficient operation.</p>
+                                  </div>
+                                </div><!-- End Icon Box -->
+                    
+                              </div>
+                            </div>
+                    
+                          </div>
+                    
+                        </section><!-- /Alt Services Section -->
+
+
+
+                        <section id="alt-services" class="alt-services section">
+
+                            <div class="container">
+                        
+                                <div class="row justify-content-around gy-4">
+                                  <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="{%static 'assets/img/alt-services.jpg'%}" alt=""></div>
+                        
+                                  <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                                    <!-- <h3>Ground Water Services</h3> -->
+                                    <h5>Groundwater Resource Management</h5>
+                        
+                                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+                                      <i class="bi bi-easel flex-shrink-0"></i>
+                                      <div>
+                                        <h4><a href="" class="stretched-link">Sustainable Resource Planning</a></h4>
+                                        <p>We assist in developing sustainable groundwater management plans, including recharge strategies and withdrawal limits.</p>
+                                      </div>
+                                    </div><!-- End Icon Box -->
+                        
+                                    <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+                                      <i class="bi bi-patch-check flex-shrink-0"></i>
+                                      <div>
+                                        <h4><a href="" class="stretched-link">Regulatory Compliance</a></h4>
+                                        <p>Our experts help clients navigate regulatory requirements related to groundwater use and protection.</p>
+                                      </div>
+                                    </div><!-- End Icon Box -->
+                        
+                                  </div>
+                                </div>
+                        
+                              </div>
+                        
+                            </section><!-- /Alt Services Section -->
+            
+    <section id="other-services" class="other-services section">
+      <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                <h3>Geotechnical Engineering</h3>
+                <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Site Investigation and Soil Testing</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Foundation Design and Analysis</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Slope Stability Analysis</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Retaining Wall Design</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Pavement Design and Evaluation</span></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                <h3>Environmental Consulting</h3>
+                <ul>
+                    <li><i class="bi bi-check2-square"></i> <span>Environmental Impact Assessments (EIA)</span></li>
+                    <li><i class="bi bi-check2-square"></i> <span>Wetland Delineation and Permitting</span></li>
+                    <li><i class="bi bi-check2-square"></i> <span>Environmental Compliance and Permitting</span></li>
+                    <li><i class="bi bi-check2-square"></i> <span>Phase I and Phase II Environmental Site Assessments</span></li>
+                    <li><i class="bi bi-check2-square"></i> <span>Soil and Groundwater Remediation</span></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                <h3>General Geological Studies</h3>
+                <ul>
+                    <li><i class="bi bi-check2-all"></i> <span>Geological Mapping</span></li>
+                    <li><i class="bi bi-check2-all"></i> <span>Mineral Exploration</span></li>
+                    <li><i class="bi bi-check2-all"></i> <span>Geologic Hazard Assessment</span></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                <h3>Geo-techniques and Tools</h3>
+                <ul>
+                    <li><i class="bi bi-check2"></i> <span>GIS Mapping and Analysis</span></li>
+                    <li><i class="bi bi-check2"></i> <span>Remote Sensing</span></li>
+                    <li><i class="bi bi-check2"></i> <span>3D Modeling and Visualization</span></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+      </div>
+    </section>  
+
+    </section><!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>CONTACT US</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade" data-aos-delay="100">
+
+            <div class="row gy-4">
+    
+              <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p style="font-weight: bold;">Ongata Rongai - Kaygee House, 2ND Floor, Room B4</p>
+                  </div>
+                </div><!-- End Info Item -->
+    
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p style="font-weight: bold;">+254 710 389 280</p>
+                  </div>
+                </div><!-- End Info Item -->
+    
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p style="font-weight: bold;">horebsprings@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-mailbox flex-shrink-0"></i>
+                    <div>
+                      <h3>Box No</h3>
+                      <p style="font-weight: bold;">P.O Box 267-40400</p>
+                      <p style="font-weight: bold;">Suna, Kenya</p>
+                    </div>
+                  </div>
+                <!-- End Info Item -->
+    
+              </div>
+    
+              <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                  <div class="row gy-4">
+    
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+    
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+    
+                      <button type="submit">Send Message</button>
+                    </div>
+    
+                  </div>
+                </form>
+              </div><!-- End Contact Form -->
+    
+            </div>
+    
+          </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">HOREB SPRINGS</h3>
+      <p>Delivering cutting edge global solutions.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <!-- <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a> -->
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">HOREB SPRINGS</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">Collince Selly</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{%static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{%static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{%static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{%static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
